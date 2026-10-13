@@ -22,7 +22,7 @@ body {
 
 #demo {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     border: 2px solid red;
     width: 50%;
@@ -36,6 +36,12 @@ body {
 
 #demo > p {
     font-size: 2rem;
-    text-align: center;
 }
 
+#demo > img {
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 0.75rem;
+    border: 1px solid black;
+    object-fit: contain;
+}
