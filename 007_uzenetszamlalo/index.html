@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üzenetszámláló</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="fejlec">
+            <span class="ikon" aria-hidden="true">✉</span>
+            <h1>Üzenetszámláló</h1>
+        </header>
+
+        <p class="leiras">Írj egy rövid üzenetet, és figyeld a karakterek számát!</p>
+
+        <div class="szerkeszto">
+            <label for="uzenet">Az üzeneted</label>
+            <textarea id="uzenet" maxlength="100" placeholder="Ide írhatod az üzeneted…"></textarea>
+        </div>
+
+        <div class="info">
+            <p>Legfeljebb 100 karakter</p>
+            <p class="szamlalo"><span id="darab">0</span> / 100</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

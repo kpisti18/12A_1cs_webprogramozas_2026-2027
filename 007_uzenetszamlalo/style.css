@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff3e7;
+    color: #543820;
+    min-height: 100vh;
+    padding: 20px;
+    /* FELADAT: Flexszel igazítsd középre a fő dobozt mindkét irányban! */
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 26px;
+    background: white;
+    box-shadow: 0 8px 28px #54382014;
+    /* FELADAT: Függőleges flex elrendezés, 20px térközzel. */
+    /* FELADAT: 16px-es sarokkerekítés. */
+}
+
+.fejlec {
+    /* FELADAT: Vízszintes flex elrendezés, függőleges középre
+       igazítás, 12px térköz. */
+}
+
+.ikon {
+    font-size: 36px;
+    color: #a64a13;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.leiras {
+    color: #806750;
+    line-height: 1.5;
+}
+
+.szerkeszto {
+    /* FELADAT: Függőleges flex elrendezés, 10px térközzel. */
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    border: 1px solid #ddc6b3;
+    border-radius: 8px;
+    background: #fffaf5;
+    color: #543820;
+    font: inherit;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.info {
+    color: #806750;
+    font-size: 14px;
+    /* FELADAT: Vízszintes flex elrendezés, függőleges középre
+       igazítás. A két felirat a sor két szélére kerüljön! */
+}
+
+.szamlalo {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #ffead6;
+    color: #a64a13;
+    white-space: nowrap;
+    margin-left: 12px;
+    /* FELADAT: Félkövér betűvastagság. */
+}

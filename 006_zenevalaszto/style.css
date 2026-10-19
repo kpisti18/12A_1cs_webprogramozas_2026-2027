@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9f5f2;
+    color: #183e37;
+    min-height: 100vh;
+    padding: 20px;
+    /* FELADAT: Flexszel igazítsd középre a fő dobozt mindkét irányban! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 26px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px #183e3714;
+    /* FELADAT: Függőleges flex elrendezés, 20px térközzel. */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fejlec {
+    /* FELADAT: Vízszintes flex elrendezés, függőleges középre igazítás.
+       A cím balra, a MIX jelvény jobbra kerüljön, a köztük maradó
+       szabad helyet oszd el! */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.jelveny {
+    padding: 6px 10px;
+    background: #d6eee6;
+    color: #176b55;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.leiras {
+    color: #56766e;
+    line-height: 1.5;
+}
+
+.beallitasok {
+    /* FELADAT: Függőleges flex elrendezés, 10px térközzel. */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #accfc3;
+    border-radius: 8px;
+    background: white;
+    color: #183e37;
+    font: inherit;
+    /* FELADAT: Mutató kéz alakú egérkurzor. */
+    cursor: pointer;
+}
+
+.kartya {
+    background: #176b55;
+    color: white;
+    padding: 24px;
+    text-align: center;
+    /* FELADAT: Függőleges flex elrendezés, vízszintesen középre
+       igazított gyermekelemekkel, 12px térközzel. */
+    /* FELADAT: 12px-es sarokkerekítés. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 12px;
+}
+
+.ikon {
+    font-size: 48px;
+    line-height: 1;
+}
+
+#valasztott {
+    font-size: 28px;
+}

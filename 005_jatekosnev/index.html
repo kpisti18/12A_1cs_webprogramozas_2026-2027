@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Játékosnév-kártya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Játékosnév-kártya</h1>
+        <p>Add meg a neved, és készíts saját játékoskártyát!</p>
+
+        <div class="beallitasok">
+            <label for="nev">Játékosneved</label>
+            <input type="text" id="nev" placeholder="Például: PixelPanda" maxlength="20">
+            <button type="button" id="gomb">Megjelenítés</button>
+        </div>
+
+        <div class="kartya">
+            <span class="ikon" aria-hidden="true">★</span>
+            <div>
+                <p class="felirat">JÁTÉKOS</p>
+                <h2 id="jatekosnev">Vendég</h2>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

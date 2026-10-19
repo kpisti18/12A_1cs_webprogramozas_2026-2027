@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf2f7;
+    color: #233047;
+    min-height: 100vh;
+    padding: 20px;
+    /* FELADAT: A fő doboz középre igazítása flexszel. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+    padding: 28px;
+    background: white;
+    box-shadow: 0 8px 28px #23304714;
+    /* FELADAT: Függőleges flex elrendezés, 20px térköz. */
+    /* FELADAT: 16px-es sarokkerekítés. */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.container > p {
+    color: #607087;
+    line-height: 1.5;
+}
+
+.beallitasok {
+    /* FELADAT: Függőleges flex elrendezés, 10px térköz. */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #c6d0df;
+    border-radius: 8px;
+    font: inherit;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #495bd6;
+    color: white;
+    font: inherit;
+    /* FELADAT: Mutató kéz alakú egérkurzor. */
+    cursor: pointer;
+}
+
+.kartya {
+    background: #edf0ff;
+    border: 1px solid #d7ddff;
+    border-radius: 12px;
+    padding: 20px;
+    /* FELADAT: Vízszintes flex elrendezés, függőleges középre igazítás, 16px térköz. */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ikon {
+    color: #495bd6;
+    font-size: 44px;
+}
+
+.felirat {
+    color: #607087;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+#jatekosnev {
+    font-size: 24px;
+    overflow-wrap: anywhere;
+}
+
+.kartya > div {
+    min-width: 0;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenei stílusválasztó</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="fejlec">
+            <h1>Zenei stílusválasztó</h1>
+            <span class="jelveny">MIX</span>
+        </header>
+
+        <p class="leiras">Milyen zenéhez van kedved? Válassz egy stílust!</p>
+
+        <div class="beallitasok">
+            <label for="stilus">Zenei stílus</label>
+            <select id="stilus">
+                <option value="Pop" selected>Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Elektronikus">Elektronikus</option>
+                <option value="Klasszikus">Klasszikus</option>
+            </select>
+        </div>
+
+        <section class="kartya">
+            <span class="ikon" aria-hidden="true">♫</span>
+            <p>A választott stílusod:</p>
+            <h2 id="valasztott">Pop</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
