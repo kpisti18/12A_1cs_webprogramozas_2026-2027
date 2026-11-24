@@ -424,3 +424,18 @@ const messages = [
     "VIDD VÉGIG AZ ÖTLETEIDET!",
     "VIGYÉL EGY JÓ HÍRT!",
 ];
+
+const messageBox = document.querySelector('#messageBox')
+const messageButton = document.querySelector('#messageButton')
+//console.log(messageBox, messageButton)
+
+messageButton.addEventListener('click', ujUzenet)
+
+function ujUzenet() {
+    //console.log('műkdik');
+    //const veletlen = Math.floor(Math.random() * 10) + 1
+    //const veletlen = Math.ceil(Math.random() * 10)
+    const veletlen = Math.floor(Math.random() * messages.length)
+    console.log(veletlen)
+    messageBox.textContent = messages[veletlen]
+}
